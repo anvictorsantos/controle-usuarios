@@ -17,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [MemberController::class, 'index']);
 
 Route::get('/show', [MemberController::class, 'getMembers']);
+
+Route::post('/save', [MemberController::class, 'save']);
+
+Route::post('/update', [MemberController::class, 'update']);
+
+Route::post('/delete', [MemberController::class, 'delete']);
